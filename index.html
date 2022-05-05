@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>Password Generator</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="assets/style.css">>
 </head>
 
 <body>
@@ -21,7 +21,7 @@
       <div class="form">
         <form>
           <label for="length">Length of password</label>
-          <input type="text" id="length" name=length><br>
+          <input type="number" id="length" name=length min="8" max="128"><br>
           <input type="checkbox" id="letters1" name="letters1" value="upperCaseLetters">
           <label for="letters1"> Uppercase Letters</label><br>
           <input type="checkbox" id="letters2" name="letters2" value="lowerCaseLetters">
@@ -41,7 +41,7 @@
       </div>
     </div>
   </div>
-  <script src="script.js"></script>
+  <script src="assets/script.js"></script>
 </body>
 
 </html>
