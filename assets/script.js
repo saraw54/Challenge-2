@@ -19,7 +19,7 @@ function generatePassword()
 {
   var passLength = prompt("Enter the length of password (must be between 8 and 128 characters)");
   //alert when password length is outside perimeters
-  if ((passLength < 8) || (passLength > "128")) {
+  if (passLength < 8 || passLength > 128) {
     alert("Password must be between 8 and 128 characters")
     return "Invalid password length"
   }
@@ -29,7 +29,6 @@ function generatePassword()
   var specialCharacters = confirm("Special characters?")
 
   //perimeters of possible password outcomes
-
   var upperStr = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
   var lowerStr = upperStr.toLowerCase();
   var numStr = "0123456789";
